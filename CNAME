@@ -1,1 +1,974 @@
-prof-ashutosh-mohan.com
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Prof. Ashutosh Mohan</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#f5f7fb;
+    overflow-x:hidden;
+}
+
+/* =========================
+BACKGROUND HERO SECTION
+========================= */
+
+.hero{
+
+    position:relative;
+    width:100%;
+    max-height:300px;
+
+    background:linear-gradient(
+    rgba(255, 255, 128, 0.45),
+    rgba(255, 255, 128, 0.35)
+    ),
+
+    url('https://www.bhu.ac.in/Images/slider/slider1.jpg');
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    text-align:center;
+    padding:40px 20px;
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+}
+
+/* PROFILE IMAGE */
+
+.profile-img{
+
+    width:120px;
+    height:130px;
+
+    border-radius:60%;
+
+    object-fit:cover;
+
+    margin-bottom:10px;
+
+    background:white;
+}
+
+/* NAME */
+
+.hero h1{
+
+    color:#002699;
+
+    font-size:26px;
+
+    font-weight:600;
+
+    margin-bottom:5px;
+}
+
+/* DESIGNATION */
+
+.designation{
+
+    color:#002699;
+
+    font-size:18px;
+
+    font-weight:500;
+
+    margin-bottom:5px;
+}
+
+/* INSTITUTE */
+
+.institute{
+
+    color:#002699;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    line-height:1.7;
+}
+
+
+@media(max-width:600px){
+
+    .side-logo{
+
+        width:70px;
+        height:70px;
+
+        border-radius:18px;
+    }
+
+}
+
+/* =========================
+SIDE LOGOS
+========================= */
+
+.side-logo{
+
+    position:absolute;
+
+    top:20px;
+
+    z-index:2;
+
+    width:300px;
+    height:100px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    transition:0.35s ease;
+}
+
+.side-logo:hover{
+
+    transform:translateY(-4px) scale(1.04);
+
+    box-shadow:0 12px 28px rgba(0,0,0,0.35);
+}
+
+/* LOGO IMAGE */
+
+.side-logo img{
+
+    width:100%;
+
+    height:60%;
+
+    object-fit:contain;
+}
+
+/* =========================
+LEFT LOGO
+50px LEFT FROM PROFILE IMAGE
+========================= */
+
+.left-logo{
+
+    left:calc(4% - 240px);
+}
+
+/* =========================
+RIGHT LOGO
+50px RIGHT FROM PROFILE IMAGE
+========================= */
+
+.right-logo{
+
+    right:calc(4% - 240px);
+}
+
+/* =========================
+TABLET
+========================= */
+
+@media(max-width:900px){
+
+    .side-logo{
+
+        width:90px;
+        height:90px;
+
+        top:20px;
+    }
+
+    .left-logo{
+
+        left:calc(4% - 190px);
+    }
+
+    .right-logo{
+
+        right:calc(4% - 190px);
+    }
+
+}
+
+/* =========================
+MOBILE
+========================= */
+
+@media(max-width:600px){
+
+    .side-logo{
+
+        width:68px;
+        height:68px;
+
+        border-radius:16px;
+
+        top:15px;
+    }
+
+    .left-logo{
+
+        left:calc(4% - 140px);
+    }
+
+    .right-logo{
+
+        right:calc(4% - 140px);
+    }
+
+}
+
+
+/* =========================
+MAIN CONTAINER
+========================= */
+
+.container{
+
+    max-width:1300px;
+
+    margin:auto;
+
+    padding:50px 30px;
+}
+
+/* GRID */
+
+.grid{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:35px;
+}
+
+/* CARD */
+
+.card{
+
+    background:lightgolden;
+
+    border-radius:22px;
+
+    overflow:hidden;
+
+    box-shadow:0 10px 35px rgba(0,0,0,0.08);
+
+    transition:0.4s;
+}
+
+.card:hover{
+
+    transform:translateY(-6px);
+}
+
+/* CARD HEADER */
+
+.card-header{
+
+    background:linear-gradient(135deg,#0f172a,#0b3b6e);
+
+    color:white;
+
+    padding:24px 30px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    font-size:14px;
+
+    font-weight:400;
+
+    border-bottom:4px solid #f59e0b;
+}
+
+.card-header i{
+
+    color:#f59e0b;
+}
+
+/* CARD BODY */
+
+.card-body{
+
+    padding:8px 0;
+}
+
+/* ITEM */
+
+.item{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:10px;
+
+    padding:12px 18px;
+
+    border-bottom:1px solid #eef2f7;
+
+    transition:0.3s;
+}
+
+.item:hover{
+
+    background:#f8fbff;
+}
+
+/* LEFT INFO */
+
+.item-left{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+}
+
+/* ICON */
+
+.icon{
+
+    width:45px;
+    height:45px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    color:white;
+
+    font-size:28px;
+
+    flex-shrink:0;
+}
+
+/* ICON COLORS */
+
+.phone{
+    background:#2563eb;
+}
+
+.email{
+    background:#ea4335;
+}
+
+.whatsapp{
+    background:#25D366;
+}
+
+.linkedin{
+    background:#0077b5;
+}
+
+.website{
+    background:#f59e0b;
+}
+
+.scholar{
+    background:#2563eb;
+}
+
+.orcid{
+    background:#84cc16;
+}
+
+.scopus{
+    background:#f97316;
+}
+
+.researchgate{
+    background:#14b8a6;
+}
+
+.publons{
+    background:#1d4ed8;
+}
+
+/* TEXT */
+
+.item-text h3{
+
+    font-size:16px;
+
+    color:#0f172a;
+
+    margin-bottom:4px;
+}
+
+.item-text p{
+
+    color:#64748b;
+
+    font-size:12px;
+
+    word-break:break-word;
+}
+
+/* BUTTON */
+
+.btn{
+
+    text-decoration:none;
+
+    background:linear-gradient(135deg,#2563eb,#1d4ed8);
+
+    color:white;
+
+    padding:13px 24px;
+
+    border-radius:12px;
+
+    font-weight:600;
+
+    transition:0.3s;
+
+    white-space:nowrap;
+}
+
+.btn:hover{
+
+    transform:scale(1.05);
+
+    opacity:0.9;
+}
+
+/* DIFFERENT BUTTON COLORS */
+
+.email-btn{
+    background:linear-gradient(135deg,#ea4335,#d93025);
+}
+
+.whatsapp-btn{
+    background:linear-gradient(135deg,#25D366,#16a34a);
+}
+
+.linkedin-btn{
+    background:linear-gradient(135deg,#0077b5,#005582);
+}
+
+.website-btn{
+    background:linear-gradient(135deg,#f59e0b,#ea580c);
+}
+
+.orcid-btn{
+    background:linear-gradient(135deg,#84cc16,#65a30d);
+}
+
+.scopus-btn{
+    background:linear-gradient(135deg,#f97316,#ea580c);
+}
+
+.researchgate-btn{
+    background:linear-gradient(135deg,#14b8a6,#0f766e);
+}
+
+.publons-btn{
+    background:linear-gradient(135deg,#1d4ed8,#1e3a8a);
+}
+
+/* FOOTER */
+
+.footer{
+
+    margin-top:50px;
+
+    background:#0f172a;
+
+    color:white;
+
+    padding:25px 40px;
+
+    border-radius:18px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    flex-wrap:wrap;
+
+    gap:20px;
+
+    font-size:17px;
+}
+
+.footer div{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+}
+
+.footer i{
+
+    color:#f59e0b;
+}
+
+/* MOBILE */
+
+@media(max-width:1100px){
+
+    .grid{
+        grid-template-columns:1fr;
+    }
+
+    .hero h1{
+        font-size:42px;
+    }
+
+    .designation{
+        font-size:24px;
+    }
+
+    .institute{
+        font-size:20px;
+    }
+
+}
+
+@media(max-width:700px){
+
+    .hero{
+        min-height:auto;
+        padding:50px 20px;
+    }
+
+    .profile-img{
+        width:130px;
+        height:130px;
+    }
+
+    .hero h1{
+        font-size:32px;
+    }
+
+    .designation{
+        font-size:22px;
+    }
+
+    .institute{
+        font-size:17px;
+    }
+
+    .item{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+    }
+
+    .btn{
+        width:100%;
+        text-align:center;
+    }
+
+    .footer{
+        flex-direction:column;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- HERO SECTION -->
+
+<section class="hero">
+
+    <div class="hero-content">
+          <!-- LEFT LOGO -->
+
+    <div class="side-logo left-logo">
+
+        <img 
+        src="https://github.com/narendranath01/Dr.ashutohmohan/blob/main/BHU%20Logo.png"
+        alt="BHU Logo">
+
+    </div>
+
+    <!-- RIGHT LOGO -->
+
+    <div class="side-logo right-logo">
+
+        <img 
+        src="https://github.com/narendranath01/Dr.ashutohmohan/blob/main/IM_BHU.png"
+        alt="FMS Logo">
+
+    </div>
+
+        <!-- Replace image URL with actual image -->
+
+        <img
+        src="https://www.bhu.ac.in/Content/Photos/Faculties/FA000560.jpeg"
+        class="profile-img">
+
+        <h1>
+            Prof. Ashutosh Mohan
+        </h1>
+
+        <div class="designation">
+            Professor
+        </div>
+
+        <div class="institute">
+            Institute of Management Studies (FMS) <br>
+            Banaras Hindu University
+        </div>
+
+    </div>
+
+</section>
+
+<!-- MAIN CONTENT -->
+
+<div class="container">
+
+    <div class="grid">
+
+        <!-- CONNECT SECTION -->
+
+        <div class="card">
+
+            <div class="card-header">
+
+                <i class="fa-solid fa-address-book"></i>
+
+                Connect
+
+            </div>
+
+            <div class="card-body">
+
+                <!-- PHONE -->
+
+                <div class="item">
+
+                    <div class="item-left">
+
+                        <div class="icon phone">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+
+                        <div class="item-text">
+                            <h3>Phone</h3>
+                            <p>+91 8853289171</p>
+                        </div>
+
+                    </div>
+
+                    <a href="tel:+918853289171" class="btn">
+                        Call Now
+                    </a>
+
+                </div>
+
+                <!-- EMAIL -->
+
+                <div class="item">
+
+                    <div class="item-left">
+
+                        <div class="icon email">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+
+                        <div class="item-text">
+                            <h3>Email</h3>
+                            <p>ashutoshmohan@fmsbhu.ac.in</p>
+                        </div>
+
+                    </div>
+
+                    <a href="mailto:ashutoshmohan@fmsbhu.ac.in"
+                    class="btn email-btn">
+                        Send Email
+                    </a>
+
+                </div>
+
+                <!-- WHATSAPP -->
+
+                <div class="item">
+
+                    <div class="item-left">
+
+                        <div class="icon whatsapp">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </div>
+
+                        <div class="item-text">
+                            <h3>WhatsApp</h3>
+                            <p>+91 9839812181</p>
+                        </div>
+
+                    </div>
+
+                    <a href="https://wa.me/919839812181"
+                    class="btn whatsapp-btn">
+                        Chat Now
+                    </a>
+
+                </div>
+
+                <!-- LINKEDIN -->
+
+                <div class="item">
+
+                    <div class="item-left">
+
+                        <div class="icon linkedin">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </div>
+
+                        <div class="item-text">
+                            <h3>LinkedIn</h3>
+                            <p>View Professional Profile</p>
+                        </div>
+
+                    </div>
+
+                    <a href="https://in.linkedin.com/in/ashutosh-mohan-92950aaa"
+                    target="_blank"
+                    class="btn linkedin-btn">
+                        Open Profile
+                    </a>
+
+                </div>
+
+                <!-- WEBSITE -->
+
+                <div class="item">
+
+                    <div class="item-left">
+
+                        <div class="icon website">
+                            <i class="fa-solid fa-globe"></i>
+                        </div>
+
+                        <div class="item-text">
+                            <h3>Faculty Profile</h3>
+                            <p>BHU Official Website</p>
+                        </div>
+
+                    </div>
+
+                    <a href="https://www.bhu.ac.in/site/FacultyProfile/0_5?FA000560"
+                    target="_blank"
+                    class="btn website-btn">
+                        Visit Website
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- RESEARCH PROFILE SECTION -->
+
+        <div class="card">
+
+            <div class="card-header">
+
+                <i class="fa-solid fa-graduation-cap"></i>
+
+                Researcher Profile
+
+            </div>
+
+            <div class="card-body">
+
+                <!-- GOOGLE SCHOLAR -->
+
+                <div class="item">
+
+                    <div class="item-left">
+
+                        <div class="icon scholar">
+                            <i class="fa-brands fa-google"></i>
+                        </div>
+
+                        <div class="item-text">
+                            <h3>Google Scholar</h3>
+                            <p>Research Publications & Citations</p>
+                        </div>
+
+                    </div>
+
+                    <a href="https://scholar.google.com/citations?hl=en&user=RwaJWEgAAAAJ"
+                    class="btn">
+                        View Profile
+                    </a>
+
+                </div>
+
+                <!-- ORCID -->
+
+                <div class="item">
+
+                    <div class="item-left">
+
+                        <div class="icon orcid">
+                            <i class="fa-solid fa-id-card"></i>
+                        </div>
+
+                        <div class="item-text">
+                            <h3>ORCID</h3>
+                            <p>Researcher Identifier</p>
+                        </div>
+
+                    </div>
+
+                    <a href="https://orcid.org/0000-0002-0513-7693"
+                    class="btn orcid-btn">
+                        View ORCID
+                    </a>
+
+                </div>
+
+                <!-- SCOPUS -->
+
+                <div class="item">
+
+                    <div class="item-left">
+
+                        <div class="icon scopus">
+                            <i class="fa-solid fa-book"></i>
+                        </div>
+
+                        <div class="item-text">
+                            <h3>Scopus Author ID</h3>
+                            <p>Indexed Publications</p>
+                        </div>
+
+                    </div>
+
+                    <a href="https://www.scopus.com/authid/detail.uri?authorId=56111270200"
+                    class="btn scopus-btn">
+                        Open Scopus
+                    </a>
+
+                </div>
+
+                <!-- RESEARCHGATE -->
+
+                <div class="item">
+
+                    <div class="item-left">
+
+                        <div class="icon researchgate">
+                            <i class="fa-solid fa-flask"></i>
+                        </div>
+
+                        <div class="item-text">
+                            <h3>ResearchGate</h3>
+                            <p>Academic Collaboration</p>
+                        </div>
+
+                    </div>
+
+                    <a href="#"
+                    class="btn researchgate-btn">
+                        View Research
+                    </a>
+
+                </div>
+
+                <!-- PUBLONS -->
+
+                <div class="item">
+
+                    <div class="item-left">
+
+                        <div class="icon publons">
+                            <i class="fa-solid fa-award"></i>
+                        </div>
+
+                        <div class="item-text">
+                            <h3>Publons</h3>
+                            <p>Peer Review Profile</p>
+                        </div>
+
+                    </div>
+
+                    <a href="#"
+                    class="btn publons-btn">
+                        Open Publons
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+
+    <div class="footer">
+
+        <div>
+            <i class="fa-solid fa-location-dot"></i>
+            Banaras Hindu University, Varanasi
+        </div>
+
+        <div>
+            <i class="fa-solid fa-envelope"></i>
+            ashutoshmohan@fmsbhu.ac.in
+        </div>
+
+        <div>
+            <i class="fa-solid fa-phone"></i>
+            +91 8853289171
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+
+</html>
