@@ -38,8 +38,8 @@ BACKGROUND HERO SECTION
 
     position:relative;
     width:100%;
-    clamp(320px, 42vw, 500px);
-    max-height:300px;
+    min-height:clamp(320px, 42vw, 500px);
+    max-height:420px;
 
     background:linear-gradient(
     rgba(255, 255, 128, 0.45),
@@ -133,19 +133,18 @@ SIDE LOGOS
 .side-logo{
 
     position:absolute;
+
     top:50%;
+
     transform:translateY(-50%);
 
     z-index:2;
 
-    width:clamp(180px, 14vw, 280px);
-    height:auto;
+    width:220px;
 
     display:flex;
     align-items:center;
     justify-content:center;
-
-    transition:0.35s ease;
 }
 
 /* LOGO IMAGE */
@@ -162,14 +161,14 @@ SIDE LOGOS
 
 .left-logo{
 
-    left:5%;
+    left:40px;
 }
 
 /* RIGHT LOGO */
 
 .right-logo{
 
-    right:5%;
+    right:40px;
 }
 
 /* =========================
@@ -180,7 +179,17 @@ TABLET
 
     .side-logo{
 
-        width:clamp(150px, 12vw, 220px);
+        width:170px;
+    }
+
+    .left-logo{
+
+        left:15px;
+    }
+
+    .right-logo{
+
+        right:15px;
     }
 
 }
@@ -191,28 +200,32 @@ MOBILE
 
 @media(max-width:600px){
 
+    .hero{
+
+        min-height:360px;
+    }
+
     .side-logo{
 
         width:120px;
 
-        top:18px;
+        top:20px;
 
         transform:none;
     }
 
     .left-logo{
 
-        left:10px;
+        left:5px;
     }
 
     .right-logo{
 
-        right:10px;
+        right:5px;
     }
 
 }
-
-}
+    
 /* =========================
 MAIN CONTAINER
 ========================= */
@@ -895,7 +908,7 @@ EXTRA SMALL DEVICES
         <!-- Replace image URL with actual image -->
 
         <img
-        src="https://www.bhu.ac.in/Content/Photos/Faculties/FA000560.jpeg"
+        src="Profile.png"
         class="profile-img">
 
         <h1>
