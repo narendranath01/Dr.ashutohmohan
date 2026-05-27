@@ -75,7 +75,7 @@ BACKGROUND HERO SECTION
     object-fit:cover;
 
     margin-bottom:10px;
-
+    margin-top:10px;
     background:white;
 }
 
@@ -138,7 +138,6 @@ BACKGROUND HERO SECTION
 }
 
 
-
 /* =========================
 SIDE LOGOS
 ========================= */
@@ -146,49 +145,43 @@ SIDE LOGOS
 .side-logo{
 
     position:absolute;
-
-    top:20px;
+    top:50%;
+    transform:translateY(-50%);
 
     z-index:2;
 
-    width:500px;
-    height:200px;
+    width:clamp(90px, 14vw, 220px);
+    height:auto;
+
     display:flex;
     align-items:center;
     justify-content:center;
+
     transition:0.35s ease;
 }
-
 
 /* LOGO IMAGE */
 
 .side-logo img{
 
     width:100%;
-
-    height:60%;
+    height:auto;
 
     object-fit:contain;
 }
 
-/* =========================
-LEFT LOGO
-50px LEFT FROM PROFILE IMAGE
-========================= */
+/* LEFT LOGO */
 
 .left-logo{
 
-    left:calc(6% - 320px);
+    left:2%;
 }
 
-/* =========================
-RIGHT LOGO
-50px RIGHT FROM PROFILE IMAGE
-========================= */
+/* RIGHT LOGO */
 
 .right-logo{
 
-    right:calc(4% - 320px);
+    right:2%;
 }
 
 /* =========================
@@ -199,20 +192,7 @@ TABLET
 
     .side-logo{
 
-        width:200px;
-        height:200px;
-
-        top:20px;
-    }
-
-    .left-logo{
-
-        left:calc(4% - 280px);
-    }
-
-    .right-logo{
-
-        right:calc(4% - 280px);
+        width:clamp(70px, 12vw, 160px);
     }
 
 }
@@ -225,26 +205,24 @@ MOBILE
 
     .side-logo{
 
-        width:180px;
-        height:180px;
+        width:70px;
 
-        border-radius:16px;
+        top:18px;
 
-        top:15px;
+        transform:none;
     }
 
     .left-logo{
 
-        left:calc(4% - 220px);
+        left:10px;
     }
 
     .right-logo{
 
-        right:calc(4% - 220px);
+        right:10px;
     }
 
 }
-
 
 
 /* =========================
