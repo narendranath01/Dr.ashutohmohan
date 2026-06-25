@@ -129,59 +129,73 @@ BACKGROUND HERO SECTION
 /* =========================
 SIDE LOGOS
 ========================= */
-/* CONTAINER FOR BOTH LOGOS */
+/* ==========================================================================
+   SIDE LOGOS CONFIGURATION (DESKTOP)
+   ========================================================================== */
+
 .side-logo {
-  display: flex;
-  justify-content: space-between; /* Pushes one to the far left, one to the far right */
-  align-items: center;            /* Centers them vertically alignment-wise */
-  width: 100%;
-  max-width: 1200px;              /* Adjust this to match your main content's width */
-  margin: 0 auto;                 /* Centers the overall container on the screen */
-  padding: 20px 40px;             /* Acts as a safe margin from the edges of the screen */
-  box-sizing: border-box;
+    position: absolute;
+    top: 40px;                  /* Distances them from the top of the hero section */
+    width: 12%;                 /* Uses percentage width so they scale naturally with the screen */
+    max-width: 130px;           /* Prevents them from getting too large on massive screens */
+    min-width: 80px;            /* Prevents them from shrinking to oblivion */
+    z-index: 10;
 }
 
-/* INDIVIDUAL LOGO IMAGES */
+/* Individual logo positioning */
+.left-logo {
+    left: 4%;                   /* Safeguards them from hitting the screen edge */
+}
+
+.right-logo {
+    right: 4%;
+}
+
+/* LOGO IMAGES SCALE AUTOMATICALLY */
 .side-logo img {
-  max-width: 150px;               /* Limits how big the logos can get on desktop */
-  width: 100%;                    /* Allows them to scale down smoothly */
-  height: auto;                   /* Maintains aspect ratio */
-  object-fit: contain;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
 }
 
-/* We completely REMOVE .left-logo and .right-logo absolute positions (left/right/top).
-   Flexbox handles their placement automatically now.
-*/
-
-
-/* =========================
+/* ==========================================================================
    TABLET (Screens under 900px)
-   ========================= */
+   ========================================================================== */
 @media (max-width: 900px) {
-  .side-logo {
-    padding: 15px 20px;          /* Brings them slightly closer to the screen edges */
-  }
-  
-  .side-logo img {
-    max-width: 110px;            /* Scales the logos down so they don't crowd the screen */
-  }
+    .side-logo {
+        top: 30px;
+        width: 14%;            /* Slices the size slightly for mid-size displays */
+    }
+    
+    .left-logo {
+        left: 3%;
+    }
+    
+    .right-logo {
+        right: 3%;
+    }
 }
 
-/* =========================
+/* ==========================================================================
    MOBILE (Screens under 600px)
-   ========================= */
+   ========================================================================== */
 @media (max-width: 600px) {
-  .hero {
-    min-height: 360px;
-  }
+    .hero {
+        min-height: 360px;
+    }
 
-  .side-logo {
-    padding: 10px 15px;          /* Tight padding for small screens */
-  }
+    .side-logo {
+        top: 20px;
+        width: 65px;           /* Fixed small width so they stay elegant alongside the avatar */
+    }
 
-  .side-logo img {
-    max-width: 80px;             /* Keeps them small and elegant on mobile views */
-  }
+    .left-logo {
+        left: 10px;            /* Tucks them safely into the mobile corners */
+    }
+
+    .right-logo {
+        right: 10px;
+    }
 }
     
 /* =========================
