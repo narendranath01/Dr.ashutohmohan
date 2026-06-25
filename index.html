@@ -129,102 +129,59 @@ BACKGROUND HERO SECTION
 /* =========================
 SIDE LOGOS
 ========================= */
-
-.side-logo{
-
-    position:absolute;
-
-    top:40%;
-
-    transform:translateY(-40%);
-
-    z-index:2;
-
-    width:220px;
-
-    display:flex;
-    align-items:center;
-    justify-content:center;
+/* CONTAINER FOR BOTH LOGOS */
+.side-logo {
+  display: flex;
+  justify-content: space-between; /* Pushes one to the far left, one to the far right */
+  align-items: center;            /* Centers them vertically alignment-wise */
+  width: 100%;
+  max-width: 1200px;              /* Adjust this to match your main content's width */
+  margin: 0 auto;                 /* Centers the overall container on the screen */
+  padding: 20px 40px;             /* Acts as a safe margin from the edges of the screen */
+  box-sizing: border-box;
 }
 
-/* LOGO IMAGE */
-
-.side-logo img{
-
-    width:100%;
-    height:auto;
-
-    object-fit:contain;
+/* INDIVIDUAL LOGO IMAGES */
+.side-logo img {
+  max-width: 150px;               /* Limits how big the logos can get on desktop */
+  width: 100%;                    /* Allows them to scale down smoothly */
+  height: auto;                   /* Maintains aspect ratio */
+  object-fit: contain;
 }
 
-/* LEFT LOGO */
+/* We completely REMOVE .left-logo and .right-logo absolute positions (left/right/top).
+   Flexbox handles their placement automatically now.
+*/
 
-.left-logo{
 
-    left:60px;
-    
-}
-
-/* RIGHT LOGO */
-
-.right-logo{
-
-    right:60px;
+/* =========================
+   TABLET (Screens under 900px)
+   ========================= */
+@media (max-width: 900px) {
+  .side-logo {
+    padding: 15px 20px;          /* Brings them slightly closer to the screen edges */
+  }
+  
+  .side-logo img {
+    max-width: 110px;            /* Scales the logos down so they don't crowd the screen */
+  }
 }
 
 /* =========================
-TABLET
-========================= */
+   MOBILE (Screens under 600px)
+   ========================= */
+@media (max-width: 600px) {
+  .hero {
+    min-height: 360px;
+  }
 
-@media(max-width:900px){
+  .side-logo {
+    padding: 10px 15px;          /* Tight padding for small screens */
+  }
 
-    .side-logo{
-
-        width:170px;
-    }
-
-    .left-logo{
-
-        left:15px;
-    }
-
-    .right-logo{
-
-        right:15px;
-    }
-
-}
-
-/* =========================
-MOBILE
-========================= */
-
-@media(max-width:600px){
-
-    .hero{
-
-        min-height:360px;
-    }
-
-    .side-logo{
-
-        width:120px;
-
-        top:20px;
-
-        transform:none;
-    }
-
-    .left-logo{
-
-        left:5px;
-    }
-
-    .right-logo{
-
-        right:5px;
-    }
-
+  .side-logo img {
+    max-width: 80px;             /* Keeps them small and elegant on mobile views */
+  }
 }
     
 /* =========================
